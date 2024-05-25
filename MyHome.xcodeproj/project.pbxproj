@@ -11,6 +11,9 @@
 		1E6843D32C0257530079A096 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E6843D22C0257530079A096 /* ContentView.swift */; };
 		1E6843D52C0257540079A096 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E6843D42C0257540079A096 /* Assets.xcassets */; };
 		1E6843D82C0257540079A096 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E6843D72C0257540079A096 /* Preview Assets.xcassets */; };
+		1E6843E02C0257B10079A096 /* HomeKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E6843DF2C0257B10079A096 /* HomeKitManager.swift */; };
+		1E8861372C0275EB00ED3B38 /* LightAccessoryDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8861362C0275EB00ED3B38 /* LightAccessoryDetail.swift */; };
+		1E8861392C02773A00ED3B38 /* LightControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8861382C02773A00ED3B38 /* LightControl.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +22,11 @@
 		1E6843D22C0257530079A096 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1E6843D42C0257540079A096 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1E6843D72C0257540079A096 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1E6843DE2C0257970079A096 /* MyHome.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MyHome.entitlements; sourceTree = "<group>"; };
+		1E6843DF2C0257B10079A096 /* HomeKitManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeKitManager.swift; sourceTree = "<group>"; };
+		1E6843E12C025A290079A096 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		1E8861362C0275EB00ED3B38 /* LightAccessoryDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightAccessoryDetail.swift; sourceTree = "<group>"; };
+		1E8861382C02773A00ED3B38 /* LightControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightControl.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +59,13 @@
 		1E6843CF2C0257530079A096 /* MyHome */ = {
 			isa = PBXGroup;
 			children = (
+				1E6843E12C025A290079A096 /* Info.plist */,
+				1E6843DE2C0257970079A096 /* MyHome.entitlements */,
 				1E6843D02C0257530079A096 /* MyHomeApp.swift */,
 				1E6843D22C0257530079A096 /* ContentView.swift */,
+				1E8861362C0275EB00ED3B38 /* LightAccessoryDetail.swift */,
+				1E8861382C02773A00ED3B38 /* LightControl.swift */,
+				1E6843DF2C0257B10079A096 /* HomeKitManager.swift */,
 				1E6843D42C0257540079A096 /* Assets.xcassets */,
 				1E6843D62C0257540079A096 /* Preview Content */,
 			);
@@ -137,8 +150,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E8861372C0275EB00ED3B38 /* LightAccessoryDetail.swift in Sources */,
 				1E6843D32C0257530079A096 /* ContentView.swift in Sources */,
+				1E8861392C02773A00ED3B38 /* LightControl.swift in Sources */,
 				1E6843D12C0257530079A096 /* MyHomeApp.swift in Sources */,
+				1E6843E02C0257B10079A096 /* HomeKitManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,17 +285,20 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MyHome/MyHome.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MyHome/Preview Content\"";
 				DEVELOPMENT_TEAM = G746TBT9SB;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MyHome/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -298,17 +317,20 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MyHome/MyHome.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MyHome/Preview Content\"";
 				DEVELOPMENT_TEAM = G746TBT9SB;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MyHome/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
