@@ -6,11 +6,36 @@
 //
 
 import SwiftUI
+import HomeKit
 
+extension HMAccessory {
+    
+    func getValues() -> (Float, Float) {
+        
+        return (0,0)
+    }
+}
+
+class LightModel: Identifiable {
+    var accessory: HMAccessory?
+    var hue: Float
+    var saturation: Float
+    var isOn: Bool
+    
+    init(accessory: HMAccessory) {
+        self.accessory = accessory
+        let vals = accessory.getValues()
+        self.hue = vals.0
+        self.saturation = vals.1
+        self.isOn = false // TODO: Update
+    }
+}
+                        
 struct LightControlView: View {
     
     @State var kitchen: Bool = false
     @State var livingRoom: Bool = false
+//    @State var activeLight:
     
     var body: some View {
         ZStack {

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E52C81E2C037D060045D0A0 /* ColorPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E52C81D2C037D060045D0A0 /* ColorPicker.swift */; };
 		1E6843D12C0257530079A096 /* MyHomeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E6843D02C0257530079A096 /* MyHomeApp.swift */; };
 		1E6843D32C0257530079A096 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E6843D22C0257530079A096 /* ContentView.swift */; };
 		1E6843D52C0257540079A096 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E6843D42C0257540079A096 /* Assets.xcassets */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1E52C81D2C037D060045D0A0 /* ColorPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPicker.swift; sourceTree = "<group>"; };
 		1E6843CD2C0257530079A096 /* MyHome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyHome.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E6843D02C0257530079A096 /* MyHomeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyHomeApp.swift; sourceTree = "<group>"; };
 		1E6843D22C0257530079A096 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 				1E6843DE2C0257970079A096 /* MyHome.entitlements */,
 				1E6843D02C0257530079A096 /* MyHomeApp.swift */,
 				1E6843D22C0257530079A096 /* ContentView.swift */,
+				1E52C81D2C037D060045D0A0 /* ColorPicker.swift */,
 				1E8861362C0275EB00ED3B38 /* LightAccessoryDetail.swift */,
 				1E8861382C02773A00ED3B38 /* LightControl.swift */,
 				1E6843DF2C0257B10079A096 /* HomeKitManager.swift */,
@@ -155,6 +158,7 @@
 				1E8861392C02773A00ED3B38 /* LightControl.swift in Sources */,
 				1E6843D12C0257530079A096 /* MyHomeApp.swift in Sources */,
 				1E6843E02C0257B10079A096 /* HomeKitManager.swift in Sources */,
+				1E52C81E2C037D060045D0A0 /* ColorPicker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
